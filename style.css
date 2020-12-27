@@ -1,0 +1,32 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  text-align: center;
+  background-color: rgb(248, 245, 88);
+}
+#heart {
+  animation: heart 2s infinite;
+}
+#wave {
+  animation: wave 2s infinite;
+  animation-delay: 950ms;
+}
+@keyframes heart {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  50% {
+    transform: scale(0.8) rotate(25deg);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  0.2% {
+    transform: rotate(-0.7deg);
+  }
+}
